@@ -223,6 +223,7 @@ void AccountsModule::onShowPasswordPage(User *account)
 void AccountsModule::onShowAddThumb(const QString &name, const QString &thumb)
 {
     AddFingeDialog *dlg = new AddFingeDialog(thumb);
+    qDebug() << "new AddFingeDialog";
     connect(dlg, &AddFingeDialog::requestEnrollThumb, m_fingerWorker, [=] {
         m_fingerWorker->tryEnroll(name, thumb);
     });
@@ -231,6 +232,7 @@ void AccountsModule::onShowAddThumb(const QString &name, const QString &thumb)
         m_fingerWorker->refreshUserEnrollList(userName);
         onSetMainWindowEnabled(true);
         dlg->deleteLater();
+        qDebug() << "---requesetCloseDlg---";
     });
 
     m_fingerWorker->tryEnroll(name, thumb);
@@ -238,24 +240,31 @@ void AccountsModule::onShowAddThumb(const QString &name, const QString &thumb)
         // 第一次tryEnroll进入时显示添加指纹对话框
         if (m_pMainWindow->isEnabled()) {
             if (res == FingerWorker::Enroll_Success) {
+                qDebug() << "Fingerprint Input　Dlg Is Get Realdy Show";
                 onSetMainWindowEnabled(false);
                 m_fingerModel->resetProgress();
                 dlg->setFingerModel(m_fingerModel);
                 dlg->setWindowFlags(Qt::Dialog | Qt::Popup | Qt::WindowStaysOnTopHint);
                 dlg->setUsername(name);
+                qDebug() << "Fingerprint Input　Dlg Is Get Realdy Loading ...";
                 dlg->show();
+                qDebug() << "Fingerprint Input　Dlg  Show";
                 dlg->setFocus();
                 dlg->activateWindow();
+                qDebug() << "Fingerprint Input　Dlg  Location is = " << dlg->pos();
             } else {
                 m_fingerWorker->stopEnroll(name);
                 dlg->deleteLater();
+                qDebug() << "Fingerprint Input　Dlg  deleteLater";
             }
         } else {
             //　已经在添加指纹对话框中的Enroll处理
             if (res == FingerWorker::Enroll_AuthFailed) {
+                qDebug() << "Fingerprint Enroll_AuthFailed";
                 onSetMainWindowEnabled(true);
                 dlg->deleteLater();
             } else {
+                qDebug() << "setInitStatus";
                 dlg->setInitStatus();
             }
         }
