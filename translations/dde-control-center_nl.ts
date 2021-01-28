@@ -14,7 +14,7 @@
     <message>
         <location filename="../src/frame/modules/bluetooth/adapterwidget.cpp" line="69"/>
         <source>Enable bluetooth to find nearby devices (loudspeaker, keyboard, mouse)</source>
-        <translation>Schakel bluetooth in om apparaten in de buurt te vinden (zoals luidsprekers, toetsenborden en muizen)</translation>
+        <translation>Schakel bluetooth in om apparaten in de buurt te vinden (speakers, toetsenborden, muizen)</translation>
     </message>
 </context>
 <context>
@@ -111,7 +111,7 @@
     <message>
         <location filename="../src/frame/window/mainwindow.cpp" line="347"/>
         <source>Date and Time</source>
-        <translation>Datum en tijd</translation>
+        <translation>Datum en Tijd</translation>
     </message>
     <message>
         <location filename="../src/frame/window/mainwindow.cpp" line="348"/>
@@ -133,7 +133,7 @@
     <message>
         <location filename="../src/frame/window/mainwindow.cpp" line="351"/>
         <source>Keyboard and Language</source>
-        <translation>Toetsenbord en taal</translation>
+        <translation>Toetsenbord en Taal</translation>
     </message>
     <message>
         <location filename="../src/frame/window/mainwindow.cpp" line="352"/>
