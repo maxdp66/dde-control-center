@@ -2363,12 +2363,12 @@
     <message>
         <location filename="../src/frame/window/modules/network/sections/dnssection.cpp" line="50"/>
         <source>DNS</source>
-        <translation type="unfinished"/>
+        <translation type="DNS"/>
     </message>
     <message>
         <location filename="../src/frame/window/modules/network/sections/dnssection.cpp" line="194"/>
         <source>Invalid DNS address</source>
-        <translation type="unfinished"/>
+        <translation type="Ongeldig DNS-adres"/>
     </message>
 </context>
 <context>
@@ -2459,7 +2459,7 @@
     <message>
         <location filename="../src/frame/window/modules/network/hotspotpage.cpp" line="271"/>
         <source>Create Hotspot</source>
-        <translation>Hotspot opzetten</translation>
+        <translation>Hotspot maken</translation>
         <extra-contents_path>/network/Personal Hotspot</extra-contents_path>
     </message>
 </context>
@@ -2572,7 +2572,7 @@
         <location filename="../src/frame/window/modules/network/networkdetailpage.cpp" line="184"/>
         <location filename="../src/frame/window/modules/network/networkdetailpage.cpp" line="200"/>
         <source>Security Type</source>
-        <translation>Soort beveiliging</translation>
+        <translation>Beveiligings type</translation>
     </message>
     <message>
         <location filename="../src/frame/window/modules/network/networkdetailpage.cpp" line="189"/>
@@ -2588,7 +2588,7 @@
     <message>
         <location filename="../src/frame/window/modules/network/networkdetailpage.cpp" line="205"/>
         <source>Interface</source>
-        <translation>Uiterlijk</translation>
+        <translation>Interface</translation>
     </message>
     <message>
         <location filename="../src/frame/window/modules/network/networkdetailpage.cpp" line="209"/>
@@ -2610,7 +2610,7 @@
         <location filename="../src/frame/window/modules/network/networkdetailpage.cpp" line="229"/>
         <location filename="../src/frame/window/modules/network/networkdetailpage.cpp" line="244"/>
         <source>Primary DNS</source>
-        <translation>Primaire dns-server</translation>
+        <translation>Primaire DNS</translation>
     </message>
     <message>
         <location filename="../src/frame/window/modules/network/networkdetailpage.cpp" line="233"/>
@@ -2638,17 +2638,17 @@
     <message>
         <location filename="../src/frame/window/modules/network/networkmodule.cpp" line="158"/>
         <source>Wired Network</source>
-        <translation>Bekabeld netwerk</translation>
+        <translation>Bekabeld Netwerk</translation>
     </message>
     <message>
         <location filename="../src/frame/window/modules/network/networkmodule.cpp" line="159"/>
         <source>Wireless Network</source>
-        <translation>Draadloos netwerk</translation>
+        <translation>Draadloos Netwerk</translation>
     </message>
     <message>
         <location filename="../src/frame/window/modules/network/networkmodule.cpp" line="160"/>
         <source>Personal Hotspot</source>
-        <translation>Persoonlijke hotspot</translation>
+        <translation>Persoonlijke Hotspot</translation>
     </message>
     <message>
         <location filename="../src/frame/window/modules/network/networkmodule.cpp" line="267"/>
@@ -2715,7 +2715,7 @@
     <message>
         <location filename="../src/frame/window/modules/network/networkmodulewidget.cpp" line="366"/>
         <source>Personal Hotspot</source>
-        <translation>Persoonlijke hotspot</translation>
+        <translation>Persoonlijke Hotspot</translation>
         <extra-contents_path>/network/Personal Hotspot</extra-contents_path>
     </message>
     <message>
@@ -2726,18 +2726,18 @@
     <message>
         <location filename="../src/frame/window/modules/network/networkmodulewidget.cpp" line="388"/>
         <source>Wired Network</source>
-        <translation>Bekabeld netwerk</translation>
+        <translation>Bekabeld Netwerk</translation>
         <extra-contents_path>/network/Wired Network</extra-contents_path>
     </message>
     <message>
         <location filename="../src/frame/window/modules/network/networkmodulewidget.cpp" line="392"/>
         <source>Wireless Network %1</source>
-        <translation>Draadloos netwerk: %1</translation>
+        <translation>Draadloos Netwerk: %1</translation>
     </message>
     <message>
         <location filename="../src/frame/window/modules/network/networkmodulewidget.cpp" line="395"/>
         <source>Wireless Network</source>
-        <translation>Draadloos netwerk</translation>
+        <translation>Draadloos Netwerk</translation>
         <extra-contents_path>/network/WirelessPage</extra-contents_path>
     </message>
     <message>
